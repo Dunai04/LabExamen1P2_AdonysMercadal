@@ -4,10 +4,13 @@
  */
 package labexamen1p2adonysmercadal;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author adony
  */
-public class Civiles {
+public class Civiles extends Usuarios{
+    private ArrayList <Tramites> Tramites = new ArrayList();
     
 }
