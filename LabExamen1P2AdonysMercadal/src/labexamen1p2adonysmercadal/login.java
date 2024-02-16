@@ -38,6 +38,9 @@ public class login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
+        empleado.setMinimumSize(new java.awt.Dimension(600, 400));
+        empleado.setModal(true);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -80,6 +83,9 @@ public class login extends javax.swing.JFrame {
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
         );
+
+        civil.setMinimumSize(new java.awt.Dimension(600, 400));
+        civil.setModal(true);
 
         javax.swing.GroupLayout civilLayout = new javax.swing.GroupLayout(civil.getContentPane());
         civil.getContentPane().setLayout(civilLayout);
@@ -157,7 +163,12 @@ public class login extends javax.swing.JFrame {
         if (nembre.equals("Adonys Mercadal")|| nembre.equals("Venus Lobo")){
            if(contre.equals("123")&& nembre.equals("Adonys Mercadal")){
                empleado.setVisible(rootPaneCheckingEnabled);
+               empleado.setModal(true);
+               empleado.setLocationRelativeTo(this);
+               empleado.setVisible(rootPaneCheckingEnabled);
            }else if(contre.equals("456")&& nembre.equals("Venus Lobo")){
+               civil.setModal(true);
+               civil.setLocationRelativeTo(this);
                civil.setVisible(rootPaneCheckingEnabled);
            }else{
                JOptionPane.showConfirmDialog(rootPane, "Contrasena incorrecta");
