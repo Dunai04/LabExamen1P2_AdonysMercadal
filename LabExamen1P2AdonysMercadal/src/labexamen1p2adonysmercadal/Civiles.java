@@ -5,6 +5,7 @@
 package labexamen1p2adonysmercadal;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -12,5 +13,9 @@ import java.util.ArrayList;
  */
 public class Civiles extends Usuarios{
     private ArrayList <Tramites> Tramites = new ArrayList();
+
+    public Civiles(String nombre, String apellido, String contrasena, Date fechaDeNaci, String sexo, String departamento) {
+        super(nombre, apellido, contrasena, fechaDeNaci, sexo, departamento);
+    }
     
 }

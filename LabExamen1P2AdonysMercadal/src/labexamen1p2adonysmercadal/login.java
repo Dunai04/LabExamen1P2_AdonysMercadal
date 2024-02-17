@@ -226,6 +226,11 @@ public class login extends javax.swing.JFrame {
                 cerrarSesionMouseClicked(evt);
             }
         });
+        cerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cerrarSesionActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout empleadoLayout = new javax.swing.GroupLayout(empleado.getContentPane());
         empleado.getContentPane().setLayout(empleadoLayout);
@@ -483,7 +488,15 @@ public class login extends javax.swing.JFrame {
 
     private void cerrarSMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cerrarSMouseClicked
          civil.setVisible(false);
+         nombre.setText(" ");
+         contra.setText(" ");
     }//GEN-LAST:event_cerrarSMouseClicked
+
+    private void cerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarSesionActionPerformed
+        empleado.setVisible(false);
+        nombre.setText(" ");
+         contra.setText(" ");
+    }//GEN-LAST:event_cerrarSesionActionPerformed
 
     /**
      * @param args the command line arguments

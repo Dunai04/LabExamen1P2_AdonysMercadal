@@ -15,12 +15,14 @@ public class Empleados extends Usuarios {
     private String puestoaLaboral;
     private Date anos;
 
-    public Empleados(String Carrera, String puestoaLaboral, Date anos, String nombre, String apellido, String contrasena, Date fechaDeNaci, String sexo, String departamento, String numeroID) {
-        super(nombre, apellido, contrasena, fechaDeNaci, sexo, departamento, numeroID);
+    public Empleados(String Carrera, String puestoaLaboral, Date anos, String nombre, String apellido, String contrasena, Date fechaDeNaci, String sexo, String departamento) {
+        super(nombre, apellido, contrasena, fechaDeNaci, sexo, departamento);
         this.Carrera = Carrera;
         this.puestoaLaboral = puestoaLaboral;
         this.anos = anos;
     }
+
+   
 
     public Empleados() {
     }
