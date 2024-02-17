@@ -86,7 +86,7 @@ public class Usuarios {
         return numeroID;
     }
 
-    public void setNumeroID(String numeroID) {
+    public void setNumeroID() {
         this.numeroID = gennumID();
     }
 
