@@ -14,6 +14,14 @@ import java.util.Date;
 public class Civiles extends Usuarios{
     private ArrayList <Tramites> Tramites = new ArrayList();
 
+    public void setTramites(ArrayList<Tramites> Tramites) {
+        this.Tramites = Tramites;
+    }
+
+    public ArrayList<Tramites> getTramites() {
+        return Tramites;
+    }
+
     public Civiles(String nombre, String apellido, String contrasena, Date fechaDeNaci, String sexo, String departamento) {
         super(nombre, apellido, contrasena, fechaDeNaci, sexo, departamento);
     }
